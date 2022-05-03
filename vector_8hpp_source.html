@@ -74,79 +74,91 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define VECTOR_HPP</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
-<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_vector3d.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_vector3d.html">Vector3d</a></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;   <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_matrix3x3.html">Matrix3x3</a>;</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a>();</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a>(<span class="keywordtype">int</span> _vectorID, <span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <span class="keywordtype">float</span> _z);</div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a>(<span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <span class="keywordtype">float</span> _z);</div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
-<div class="line"><a name="l00046"></a><span class="lineno"><a class="line" href="class_vector3d.html#ab0d497b2a1ee352d181b22986f4b258b">   46</a></span>&#160;   <a class="code" href="class_vector3d.html#ab0d497b2a1ee352d181b22986f4b258b">~Vector3d</a>() {}</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> &amp;<a class="code" href="class_matrix3x3.html#afa330524ec8a55354d69ce6ce89346e9">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;   <span class="keywordtype">void</span> set_vectorID(<span class="keywordtype">int</span> _vectorID);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;   <span class="keywordtype">void</span> set_x(<span class="keywordtype">float</span> _x);</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;   <span class="keywordtype">void</span> set_y(<span class="keywordtype">float</span> _y);</div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;   <span class="keywordtype">void</span> set_z(<span class="keywordtype">float</span> _z);</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;   <span class="keywordtype">int</span> get_vectorID();</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;   <span class="keywordtype">float</span> get_x();</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;   <span class="keywordtype">float</span> get_y();</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;   <span class="keywordtype">float</span> get_z();</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_matrix3x3.html#a42a434789e8390be7551be2b6cc25460">operator+</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> &amp;<a class="code" href="class_matrix3x3.html#a1c667591181cdd9a7ebad0d9932cc9f3">operator+=</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
-<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_matrix3x3.html#a04461edf03e1704d1ea38fbbcc7e4156">operator-</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
-<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> &amp;<a class="code" href="class_matrix3x3.html#af2d223b07f1f650722621b82d7243d08">operator-=</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_matrix3x3.html#a1b764d0e3ddb64134c631e05f0cf7ea1">operator*</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V); <span class="comment">// const Vector3d&amp; V, float num</span></div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160; </div>
-<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_matrix3x3.html#a1b764d0e3ddb64134c631e05f0cf7ea1">operator*</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;f);</div>
-<div class="line"><a name="l00108"></a><span class="lineno">  108</span>&#160; </div>
-<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> operator/(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V); <span class="comment">// dividing one vector by another</span></div>
-<div class="line"><a name="l00112"></a><span class="lineno">  112</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> operator/(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;f);</div>
-<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160; </div>
-<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160;   <span class="keywordtype">float</span> dotProduct(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160; </div>
-<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> crossProduct(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;Va, <span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;Vb);</div>
-<div class="line"><a name="l00124"></a><span class="lineno">  124</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160;   <span class="keywordtype">void</span> print();</div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160; </div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;   <span class="keywordtype">int</span> vectorID; </div>
-<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;   <span class="keywordtype">float</span> x; </div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;   <span class="keywordtype">float</span> y; </div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;   <span class="keywordtype">float</span> z; </div>
-<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160;};</div>
-<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160; </div>
-<div class="line"><a name="l00137"></a><span class="lineno">  137</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160; </div>
+<div class="line"><a name="l00016"></a><span class="lineno"><a class="line" href="class_vector3d.html">   16</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_vector3d.html">Vector3d</a></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;{</div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;   <span class="keyword">friend</span> <span class="keyword">class </span><a class="code" href="class_matrix3x3.html">Matrix3x3</a>;</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;   <a class="code" href="class_vector3d.html#aac098d8695c4288e4844835e62945244">Vector3d</a>();</div>
+<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;   <a class="code" href="class_vector3d.html#aac098d8695c4288e4844835e62945244">Vector3d</a>(<span class="keywordtype">int</span> _vectorID, <span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <span class="keywordtype">float</span> _z);</div>
+<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
+<div class="line"><a name="l00037"></a><span class="lineno">   37</span>&#160;   <a class="code" href="class_vector3d.html#aac098d8695c4288e4844835e62945244">Vector3d</a>(<span class="keywordtype">float</span> _x, <span class="keywordtype">float</span> _y, <span class="keywordtype">float</span> _z);</div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160; </div>
+<div class="line"><a name="l00041"></a><span class="lineno">   41</span>&#160;   <a class="code" href="class_vector3d.html#aac098d8695c4288e4844835e62945244">Vector3d</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="class_vector3d.html#ab0d497b2a1ee352d181b22986f4b258b">   45</a></span>&#160;   <a class="code" href="class_vector3d.html#ab0d497b2a1ee352d181b22986f4b258b">~Vector3d</a>() {}</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> &amp;<a class="code" href="class_vector3d.html#ae8de3e5fb8080134f617480933594e61">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_vector3d.html#af1ea60de918922848dd6e6205b4e477f">set_vectorID</a>(<span class="keywordtype">int</span> _vectorID);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_vector3d.html#aefa3810887656b6fac04843cc7411c2f">set_x</a>(<span class="keywordtype">float</span> _x);</div>
+<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_vector3d.html#a72fd0ef1fb5d0295645e39e5ee5d5716">set_y</a>(<span class="keywordtype">float</span> _y);</div>
+<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_vector3d.html#a43506efd8606782fcc97388a61dd3cb0">set_z</a>(<span class="keywordtype">float</span> _z);</div>
+<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;   <span class="keywordtype">int</span> <a class="code" href="class_vector3d.html#abef64a5287802ddc7d47ed718cad5f6e">get_vectorID</a>();</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160; </div>
+<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;   <span class="keywordtype">float</span> <a class="code" href="class_vector3d.html#a454eb16966652410311171162b29804a">get_x</a>();</div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;   <span class="keywordtype">float</span> <a class="code" href="class_vector3d.html#af896109315e8dc061ebd0c28c54b664a">get_y</a>();</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00080"></a><span class="lineno">   80</span>&#160;   <span class="keywordtype">float</span> <a class="code" href="class_vector3d.html#a437616933f44ac35fcf2d56c6ad4b8b6">get_z</a>();</div>
+<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160; </div>
+<div class="line"><a name="l00084"></a><span class="lineno">   84</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_vector3d.html#a98162dd18cd0d4dc15fced6e277d74f4">operator+</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
+<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160; </div>
+<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> &amp;<a class="code" href="class_vector3d.html#ab12c80276bfa30563942b16ec31766b3">operator+=</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
+<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_vector3d.html#a9fb344891a1cc3c3517faaff985f98de">operator-</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> &amp;<a class="code" href="class_vector3d.html#a7e0ebefe212101820e2fbce4fbc49720">operator-=</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00102"></a><span class="lineno">  102</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_vector3d.html#a843f3c84d904f993182b2fd8d835371e">operator*</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V); <span class="comment">// const Vector3d&amp; V, float num</span></div>
+<div class="line"><a name="l00103"></a><span class="lineno">  103</span>&#160; </div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_vector3d.html#a843f3c84d904f993182b2fd8d835371e">operator*</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;f);</div>
+<div class="line"><a name="l00107"></a><span class="lineno">  107</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_vector3d.html#a5c861b4d45f9bcc8e46ef93ba68e7cbc">operator/</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V); <span class="comment">// dividing one vector by another</span></div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_vector3d.html#a5c861b4d45f9bcc8e46ef93ba68e7cbc">operator/</a>(<span class="keyword">const</span> <span class="keywordtype">float</span> &amp;f);</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00118"></a><span class="lineno">  118</span>&#160;   <span class="keywordtype">float</span> <a class="code" href="class_vector3d.html#a96b6d61886ec788c8c3846571fa1fc9a">dotProduct</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;V);</div>
+<div class="line"><a name="l00119"></a><span class="lineno">  119</span>&#160; </div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160;   <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_vector3d.html#a3f777d458b149355467a2f5b39524444">crossProduct</a>(<span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;Va, <span class="keyword">const</span> <a class="code" href="class_vector3d.html">Vector3d</a> &amp;Vb);</div>
+<div class="line"><a name="l00123"></a><span class="lineno">  123</span>&#160; </div>
+<div class="line"><a name="l00126"></a><span class="lineno">  126</span>&#160;   <span class="keywordtype">void</span> <a class="code" href="class_vector3d.html#ac0dd2f300354945ca5612804b21a78a9">print</a>();</div>
+<div class="line"><a name="l00127"></a><span class="lineno">  127</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;   <span class="keywordtype">int</span> vectorID; </div>
+<div class="line"><a name="l00131"></a><span class="lineno">  131</span>&#160;   <span class="keywordtype">float</span> x; </div>
+<div class="line"><a name="l00132"></a><span class="lineno">  132</span>&#160;   <span class="keywordtype">float</span> y; </div>
+<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;   <span class="keywordtype">float</span> z; </div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;};</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00136"></a><span class="lineno">  136</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_matrix3x3_html_af2d223b07f1f650722621b82d7243d08"><div class="ttname"><a href="class_matrix3x3.html#af2d223b07f1f650722621b82d7243d08">Matrix3x3::operator-=</a></div><div class="ttdeci">Matrix3x3 &amp; operator-=(const Matrix3x3 &amp;M)</div><div class="ttdef"><b>Definition:</b> matrix.cpp:182</div></div>
-<div class="ttc" id="aclass_matrix3x3_html_a04461edf03e1704d1ea38fbbcc7e4156"><div class="ttname"><a href="class_matrix3x3.html#a04461edf03e1704d1ea38fbbcc7e4156">Matrix3x3::operator-</a></div><div class="ttdeci">Matrix3x3 operator-(const Matrix3x3 &amp;M)</div><div class="ttdoc">Matrix Subtraction.</div><div class="ttdef"><b>Definition:</b> matrix.cpp:175</div></div>
-<div class="ttc" id="aclass_matrix3x3_html_a1c667591181cdd9a7ebad0d9932cc9f3"><div class="ttname"><a href="class_matrix3x3.html#a1c667591181cdd9a7ebad0d9932cc9f3">Matrix3x3::operator+=</a></div><div class="ttdeci">Matrix3x3 &amp; operator+=(const Matrix3x3 &amp;M)</div><div class="ttdef"><b>Definition:</b> matrix.cpp:160</div></div>
+<div class="ttc" id="aclass_vector3d_html_a454eb16966652410311171162b29804a"><div class="ttname"><a href="class_vector3d.html#a454eb16966652410311171162b29804a">Vector3d::get_x</a></div><div class="ttdeci">float get_x()</div><div class="ttdef"><b>Definition:</b> vector.cpp:60</div></div>
+<div class="ttc" id="aclass_vector3d_html_a3f777d458b149355467a2f5b39524444"><div class="ttname"><a href="class_vector3d.html#a3f777d458b149355467a2f5b39524444">Vector3d::crossProduct</a></div><div class="ttdeci">Vector3d crossProduct(const Vector3d &amp;Va, const Vector3d &amp;Vb)</div><div class="ttdoc">Outer/Vector/Cross Product.</div><div class="ttdef"><b>Definition:</b> vector.cpp:121</div></div>
+<div class="ttc" id="aclass_vector3d_html_aac098d8695c4288e4844835e62945244"><div class="ttname"><a href="class_vector3d.html#aac098d8695c4288e4844835e62945244">Vector3d::Vector3d</a></div><div class="ttdeci">Vector3d()</div><div class="ttdoc">Constructors.</div><div class="ttdef"><b>Definition:</b> vector.cpp:14</div></div>
+<div class="ttc" id="aclass_vector3d_html_a843f3c84d904f993182b2fd8d835371e"><div class="ttname"><a href="class_vector3d.html#a843f3c84d904f993182b2fd8d835371e">Vector3d::operator*</a></div><div class="ttdeci">Vector3d operator*(const Vector3d &amp;V)</div><div class="ttdef"><b>Definition:</b> vector.cpp:93</div></div>
+<div class="ttc" id="aclass_vector3d_html_a72fd0ef1fb5d0295645e39e5ee5d5716"><div class="ttname"><a href="class_vector3d.html#a72fd0ef1fb5d0295645e39e5ee5d5716">Vector3d::set_y</a></div><div class="ttdeci">void set_y(float _y)</div><div class="ttdef"><b>Definition:</b> vector.cpp:55</div></div>
+<div class="ttc" id="aclass_vector3d_html_abef64a5287802ddc7d47ed718cad5f6e"><div class="ttname"><a href="class_vector3d.html#abef64a5287802ddc7d47ed718cad5f6e">Vector3d::get_vectorID</a></div><div class="ttdeci">int get_vectorID()</div><div class="ttdoc">Accessors.</div><div class="ttdef"><b>Definition:</b> vector.cpp:59</div></div>
+<div class="ttc" id="aclass_vector3d_html_ac0dd2f300354945ca5612804b21a78a9"><div class="ttname"><a href="class_vector3d.html#ac0dd2f300354945ca5612804b21a78a9">Vector3d::print</a></div><div class="ttdeci">void print()</div><div class="ttdoc">Print Result in Vector Format.</div><div class="ttdef"><b>Definition:</b> vector.cpp:131</div></div>
+<div class="ttc" id="aclass_vector3d_html_a5c861b4d45f9bcc8e46ef93ba68e7cbc"><div class="ttname"><a href="class_vector3d.html#a5c861b4d45f9bcc8e46ef93ba68e7cbc">Vector3d::operator/</a></div><div class="ttdeci">Vector3d operator/(const Vector3d &amp;V)</div><div class="ttdef"><b>Definition:</b> vector.cpp:104</div></div>
+<div class="ttc" id="aclass_vector3d_html_ae8de3e5fb8080134f617480933594e61"><div class="ttname"><a href="class_vector3d.html#ae8de3e5fb8080134f617480933594e61">Vector3d::operator=</a></div><div class="ttdeci">Vector3d &amp; operator=(const Vector3d &amp;V)</div><div class="ttdoc">Assignment Operator.</div><div class="ttdef"><b>Definition:</b> vector.cpp:41</div></div>
 <div class="ttc" id="aclass_matrix3x3_html"><div class="ttname"><a href="class_matrix3x3.html">Matrix3x3</a></div><div class="ttdef"><b>Definition:</b> matrix.hpp:19</div></div>
-<div class="ttc" id="aclass_matrix3x3_html_a1b764d0e3ddb64134c631e05f0cf7ea1"><div class="ttname"><a href="class_matrix3x3.html#a1b764d0e3ddb64134c631e05f0cf7ea1">Matrix3x3::operator*</a></div><div class="ttdeci">Matrix3x3 operator*(const Matrix3x3 &amp;M)</div><div class="ttdoc">Matrix Multiplication.</div><div class="ttdef"><b>Definition:</b> matrix.cpp:197</div></div>
-<div class="ttc" id="aclass_vector3d_html_ab0d497b2a1ee352d181b22986f4b258b"><div class="ttname"><a href="class_vector3d.html#ab0d497b2a1ee352d181b22986f4b258b">Vector3d::~Vector3d</a></div><div class="ttdeci">~Vector3d()</div><div class="ttdef"><b>Definition:</b> vector.hpp:46</div></div>
-<div class="ttc" id="aclass_matrix3x3_html_afa330524ec8a55354d69ce6ce89346e9"><div class="ttname"><a href="class_matrix3x3.html#afa330524ec8a55354d69ce6ce89346e9">Matrix3x3::operator=</a></div><div class="ttdeci">Matrix3x3 &amp; operator=(const Matrix3x3 &amp;M)</div><div class="ttdoc">Assignment Operator.</div><div class="ttdef"><b>Definition:</b> matrix.cpp:116</div></div>
-<div class="ttc" id="aclass_vector3d_html"><div class="ttname"><a href="class_vector3d.html">Vector3d</a></div><div class="ttdef"><b>Definition:</b> vector.hpp:17</div></div>
-<div class="ttc" id="aclass_matrix3x3_html_a42a434789e8390be7551be2b6cc25460"><div class="ttname"><a href="class_matrix3x3.html#a42a434789e8390be7551be2b6cc25460">Matrix3x3::operator+</a></div><div class="ttdeci">Matrix3x3 operator+(const Matrix3x3 &amp;M)</div><div class="ttdoc">Matrix Addition.</div><div class="ttdef"><b>Definition:</b> matrix.cpp:153</div></div>
+<div class="ttc" id="aclass_vector3d_html_ab12c80276bfa30563942b16ec31766b3"><div class="ttname"><a href="class_vector3d.html#ab12c80276bfa30563942b16ec31766b3">Vector3d::operator+=</a></div><div class="ttdeci">Vector3d &amp; operator+=(const Vector3d &amp;V)</div><div class="ttdef"><b>Definition:</b> vector.cpp:70</div></div>
+<div class="ttc" id="aclass_vector3d_html_aefa3810887656b6fac04843cc7411c2f"><div class="ttname"><a href="class_vector3d.html#aefa3810887656b6fac04843cc7411c2f">Vector3d::set_x</a></div><div class="ttdeci">void set_x(float _x)</div><div class="ttdef"><b>Definition:</b> vector.cpp:54</div></div>
+<div class="ttc" id="aclass_vector3d_html_a437616933f44ac35fcf2d56c6ad4b8b6"><div class="ttname"><a href="class_vector3d.html#a437616933f44ac35fcf2d56c6ad4b8b6">Vector3d::get_z</a></div><div class="ttdeci">float get_z()</div><div class="ttdef"><b>Definition:</b> vector.cpp:62</div></div>
+<div class="ttc" id="aclass_vector3d_html_a43506efd8606782fcc97388a61dd3cb0"><div class="ttname"><a href="class_vector3d.html#a43506efd8606782fcc97388a61dd3cb0">Vector3d::set_z</a></div><div class="ttdeci">void set_z(float _z)</div><div class="ttdef"><b>Definition:</b> vector.cpp:56</div></div>
+<div class="ttc" id="aclass_vector3d_html_a9fb344891a1cc3c3517faaff985f98de"><div class="ttname"><a href="class_vector3d.html#a9fb344891a1cc3c3517faaff985f98de">Vector3d::operator-</a></div><div class="ttdeci">Vector3d operator-(const Vector3d &amp;V)</div><div class="ttdoc">Vector Subtraction.</div><div class="ttdef"><b>Definition:</b> vector.cpp:79</div></div>
+<div class="ttc" id="aclass_vector3d_html_ab0d497b2a1ee352d181b22986f4b258b"><div class="ttname"><a href="class_vector3d.html#ab0d497b2a1ee352d181b22986f4b258b">Vector3d::~Vector3d</a></div><div class="ttdeci">~Vector3d()</div><div class="ttdef"><b>Definition:</b> vector.hpp:45</div></div>
+<div class="ttc" id="aclass_vector3d_html_a96b6d61886ec788c8c3846571fa1fc9a"><div class="ttname"><a href="class_vector3d.html#a96b6d61886ec788c8c3846571fa1fc9a">Vector3d::dotProduct</a></div><div class="ttdeci">float dotProduct(const Vector3d &amp;V)</div><div class="ttdoc">Inner/Scalar/Dot Product.</div><div class="ttdef"><b>Definition:</b> vector.cpp:115</div></div>
+<div class="ttc" id="aclass_vector3d_html"><div class="ttname"><a href="class_vector3d.html">Vector3d</a></div><div class="ttdef"><b>Definition:</b> vector.hpp:16</div></div>
+<div class="ttc" id="aclass_vector3d_html_af1ea60de918922848dd6e6205b4e477f"><div class="ttname"><a href="class_vector3d.html#af1ea60de918922848dd6e6205b4e477f">Vector3d::set_vectorID</a></div><div class="ttdeci">void set_vectorID(int _vectorID)</div><div class="ttdoc">Mutators.</div><div class="ttdef"><b>Definition:</b> vector.cpp:53</div></div>
+<div class="ttc" id="aclass_vector3d_html_a7e0ebefe212101820e2fbce4fbc49720"><div class="ttname"><a href="class_vector3d.html#a7e0ebefe212101820e2fbce4fbc49720">Vector3d::operator-=</a></div><div class="ttdeci">Vector3d &amp; operator-=(const Vector3d &amp;V)</div><div class="ttdef"><b>Definition:</b> vector.cpp:84</div></div>
+<div class="ttc" id="aclass_vector3d_html_a98162dd18cd0d4dc15fced6e277d74f4"><div class="ttname"><a href="class_vector3d.html#a98162dd18cd0d4dc15fced6e277d74f4">Vector3d::operator+</a></div><div class="ttdeci">Vector3d operator+(const Vector3d &amp;V)</div><div class="ttdoc">Vector Addition.</div><div class="ttdef"><b>Definition:</b> vector.cpp:65</div></div>
+<div class="ttc" id="aclass_vector3d_html_af896109315e8dc061ebd0c28c54b664a"><div class="ttname"><a href="class_vector3d.html#af896109315e8dc061ebd0c28c54b664a">Vector3d::get_y</a></div><div class="ttdeci">float get_y()</div><div class="ttdef"><b>Definition:</b> vector.cpp:61</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">

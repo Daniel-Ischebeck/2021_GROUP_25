@@ -76,43 +76,52 @@ $(function() {
 <div class="line"><a name="l00013"></a><span class="lineno">   13</span>&#160;<span class="comment">// Class definition, class member functions in Material.cpp</span></div>
 <div class="line"><a name="l00014"></a><span class="lineno">   14</span>&#160;<span class="preprocessor">#include &lt;iostream&gt;</span></div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;string&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keyword">using namespace </span>std;</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00018"></a><span class="lineno"><a class="line" href="class_material.html">   18</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_material.html">Material</a></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;{</div>
-<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160;    <a class="code" href="class_material.html">Material</a>();</div>
-<div class="line"><a name="l00025"></a><span class="lineno">   25</span>&#160; </div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;    <a class="code" href="class_material.html">Material</a>(<span class="keywordtype">int</span> &amp;materialIndex, <span class="keywordtype">float</span> &amp;materialDensity, <span class="keywordtype">string</span> &amp;materialColour, <span class="keywordtype">string</span> &amp;materialName);</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160;    ~<a class="code" href="class_material.html">Material</a>();</div>
-<div class="line"><a name="l00036"></a><span class="lineno">   36</span>&#160; </div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <span class="keywordtype">int</span> get_materialIndex();</div>
-<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
-<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160;    <span class="keywordtype">float</span> get_materialDensity();</div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160; </div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;    <span class="keywordtype">string</span> get_materialName();</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;    <span class="keywordtype">string</span> get_materialColour();</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160; </div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;    <span class="keywordtype">void</span> set_materialIndex(<span class="keywordtype">int</span> index);</div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
-<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160;    <span class="keywordtype">void</span> set_materialDensity(<span class="keywordtype">float</span> density);</div>
-<div class="line"><a name="l00060"></a><span class="lineno">   60</span>&#160; </div>
-<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160;    <span class="keywordtype">void</span> set_materialColour(<span class="keywordtype">string</span> colour);</div>
-<div class="line"><a name="l00064"></a><span class="lineno">   64</span>&#160; </div>
-<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160;    <span class="keywordtype">void</span> set_materialName(<span class="keywordtype">string</span> name);</div>
-<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <span class="keywordtype">int</span> materialIndex; </div>
-<div class="line"><a name="l00072"></a><span class="lineno">   72</span>&#160;    <span class="keywordtype">float</span> materialDensity; </div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <span class="keywordtype">string</span> materialName; </div>
-<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;    <span class="keywordtype">string</span> materialColour; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;};</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00017"></a><span class="lineno"><a class="line" href="class_material.html">   17</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_material.html">Material</a></div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;{</div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;    <a class="code" href="class_material.html#a137e987401b63eb7c6c27c3e38bc74b5">Material</a>();</div>
+<div class="line"><a name="l00024"></a><span class="lineno">   24</span>&#160; </div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;    <a class="code" href="class_material.html#a137e987401b63eb7c6c27c3e38bc74b5">Material</a>(<span class="keywordtype">int</span> &amp;materialIndex, <span class="keywordtype">float</span> &amp;materialDensity, std::string &amp;materialColour, std::string &amp;materialName);</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160;    <a class="code" href="class_material.html#a2c19452d71f54075df8f5405b03129f4">~Material</a>();</div>
+<div class="line"><a name="l00035"></a><span class="lineno">   35</span>&#160; </div>
+<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_material.html#a52a392e41f35f0ae0fd94c2f33b9f495">get_materialIndex</a>();</div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
+<div class="line"><a name="l00042"></a><span class="lineno">   42</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_material.html#ac199b43204bcbe5a88880ab39e190668">get_materialDensity</a>();</div>
+<div class="line"><a name="l00043"></a><span class="lineno">   43</span>&#160; </div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;    std::string <a class="code" href="class_material.html#ac5fe1713361e3cfef97172749ecef305">get_materialName</a>();</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    std::string <a class="code" href="class_material.html#af0fb5ef6e72eafb6e863a73e3ff487ca">get_materialColour</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_material.html#a892b6cbe8fd686014820c6b93a8533df">set_materialIndex</a>(<span class="keywordtype">int</span> index);</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_material.html#a8442604c0609a5dcde8d53a1403d1364">set_materialDensity</a>(<span class="keywordtype">float</span> density);</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_material.html#a32cb7ae0fa034461e2d0083816f97770">set_materialColour</a>(std::string colour);</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <span class="keywordtype">void</span> <a class="code" href="class_material.html#a793a091d95c8eef0508affbc3e3a5a38">set_materialName</a>(std::string name);</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00068"></a><span class="lineno">   68</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <span class="keywordtype">int</span> materialIndex; </div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160;    <span class="keywordtype">float</span> materialDensity; </div>
+<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    std::string materialName; </div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160;    std::string materialColour; </div>
+<div class="line"><a name="l00076"></a><span class="lineno">   76</span>&#160;};</div>
+<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
-<div class="ttc" id="aclass_material_html"><div class="ttname"><a href="class_material.html">Material</a></div><div class="ttdef"><b>Definition:</b> material.hpp:18</div></div>
+<div class="ttc" id="aclass_material_html_a2c19452d71f54075df8f5405b03129f4"><div class="ttname"><a href="class_material.html#a2c19452d71f54075df8f5405b03129f4">Material::~Material</a></div><div class="ttdeci">~Material()</div><div class="ttdef"><b>Definition:</b> material.cpp:24</div></div>
+<div class="ttc" id="aclass_material_html_ac199b43204bcbe5a88880ab39e190668"><div class="ttname"><a href="class_material.html#ac199b43204bcbe5a88880ab39e190668">Material::get_materialDensity</a></div><div class="ttdeci">float get_materialDensity()</div><div class="ttdef"><b>Definition:</b> material.cpp:28</div></div>
+<div class="ttc" id="aclass_material_html_a137e987401b63eb7c6c27c3e38bc74b5"><div class="ttname"><a href="class_material.html#a137e987401b63eb7c6c27c3e38bc74b5">Material::Material</a></div><div class="ttdeci">Material()</div><div class="ttdef"><b>Definition:</b> material.cpp:14</div></div>
+<div class="ttc" id="aclass_material_html_a8442604c0609a5dcde8d53a1403d1364"><div class="ttname"><a href="class_material.html#a8442604c0609a5dcde8d53a1403d1364">Material::set_materialDensity</a></div><div class="ttdeci">void set_materialDensity(float density)</div><div class="ttdef"><b>Definition:</b> material.cpp:34</div></div>
+<div class="ttc" id="aclass_material_html_a892b6cbe8fd686014820c6b93a8533df"><div class="ttname"><a href="class_material.html#a892b6cbe8fd686014820c6b93a8533df">Material::set_materialIndex</a></div><div class="ttdeci">void set_materialIndex(int index)</div><div class="ttdef"><b>Definition:</b> material.cpp:33</div></div>
+<div class="ttc" id="aclass_material_html_a52a392e41f35f0ae0fd94c2f33b9f495"><div class="ttname"><a href="class_material.html#a52a392e41f35f0ae0fd94c2f33b9f495">Material::get_materialIndex</a></div><div class="ttdeci">int get_materialIndex()</div><div class="ttdef"><b>Definition:</b> material.cpp:27</div></div>
+<div class="ttc" id="aclass_material_html"><div class="ttname"><a href="class_material.html">Material</a></div><div class="ttdef"><b>Definition:</b> material.hpp:17</div></div>
+<div class="ttc" id="aclass_material_html_ac5fe1713361e3cfef97172749ecef305"><div class="ttname"><a href="class_material.html#ac5fe1713361e3cfef97172749ecef305">Material::get_materialName</a></div><div class="ttdeci">std::string get_materialName()</div><div class="ttdef"><b>Definition:</b> material.cpp:30</div></div>
+<div class="ttc" id="aclass_material_html_a32cb7ae0fa034461e2d0083816f97770"><div class="ttname"><a href="class_material.html#a32cb7ae0fa034461e2d0083816f97770">Material::set_materialColour</a></div><div class="ttdeci">void set_materialColour(std::string colour)</div><div class="ttdef"><b>Definition:</b> material.cpp:35</div></div>
+<div class="ttc" id="aclass_material_html_af0fb5ef6e72eafb6e863a73e3ff487ca"><div class="ttname"><a href="class_material.html#af0fb5ef6e72eafb6e863a73e3ff487ca">Material::get_materialColour</a></div><div class="ttdeci">std::string get_materialColour()</div><div class="ttdef"><b>Definition:</b> material.cpp:29</div></div>
+<div class="ttc" id="aclass_material_html_a793a091d95c8eef0508affbc3e3a5a38"><div class="ttname"><a href="class_material.html#a793a091d95c8eef0508affbc3e3a5a38">Material::set_materialName</a></div><div class="ttdeci">void set_materialName(std::string name)</div><div class="ttdef"><b>Definition:</b> material.cpp:36</div></div>
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by &#160;<a href="http://www.doxygen.org/index.html">
