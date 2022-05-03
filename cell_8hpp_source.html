@@ -74,158 +74,159 @@ $(function() {
 <div class="line"><a name="l00003"></a><span class="lineno">    3</span>&#160;<span class="preprocessor">#define CELL_HPP</span></div>
 <div class="line"><a name="l00004"></a><span class="lineno">    4</span>&#160; </div>
 <div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="preprocessor">#include &lt;vector&gt;</span></div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="material_8hpp.html">material.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vector_8hpp.html">vector.hpp</a>&quot;</span></div>
-<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160; </div>
-<div class="line"><a name="l00020"></a><span class="lineno"><a class="line" href="class_cell.html">   20</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cell.html">Cell</a></div>
-<div class="line"><a name="l00021"></a><span class="lineno">   21</span>&#160;{</div>
-<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00026"></a><span class="lineno">   26</span>&#160;    <a class="code" href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>();</div>
-<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160; </div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160;    <a class="code" href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>(<span class="keywordtype">char</span> &amp;cCellLetter, <span class="keywordtype">int</span> &amp;cCellIndex, <a class="code" href="class_material.html">Material</a> &amp;cTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP3); <span class="comment">// tetrahedron</span></div>
-<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160; </div>
-<div class="line"><a name="l00038"></a><span class="lineno">   38</span>&#160;    <a class="code" href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>(<span class="keywordtype">char</span> &amp;cCellLetter, <span class="keywordtype">int</span> &amp;cCellIndex, <a class="code" href="class_material.html">Material</a> &amp;cTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP3, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP4); <span class="comment">// pyramid</span></div>
-<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160; </div>
-<div class="line"><a name="l00044"></a><span class="lineno">   44</span>&#160;    <a class="code" href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>(<span class="keywordtype">char</span> &amp;cCellLetter, <span class="keywordtype">int</span> &amp;cCellIndex, <a class="code" href="class_material.html">Material</a> &amp;cTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP3,</div>
-<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;         <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP4, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP5, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP6, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP7); <span class="comment">// hexahedron</span></div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160; </div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160;    <a class="code" href="class_cell.html#a9fa559f7a28e2b4336c6879ca09304d8">~Cell</a>();</div>
-<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160; </div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a066b31356cc1acecddbafa95539c8273">get_cellIndex</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="class_cell.html#a6119bb1b7e5042a76ad4a0ee43911b80">get_cellLetter</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160; </div>
-<div class="line"><a name="l00061"></a><span class="lineno">   61</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a3fed3e1e1edf98ef2f95e200184a54e7">get_cellMaterialIndex</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160; </div>
-<div class="line"><a name="l00065"></a><span class="lineno">   65</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a9122db7fad301c04a579d761679c646a">get_cellp0</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160; </div>
-<div class="line"><a name="l00069"></a><span class="lineno">   69</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a81b0a78f834d7c43403699b174ea3a9b">get_cellp1</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160; </div>
-<div class="line"><a name="l00073"></a><span class="lineno">   73</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a741911c84cf52afc65c2f6850372bf79">get_cellp2</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160; </div>
-<div class="line"><a name="l00077"></a><span class="lineno">   77</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a6594c89106efe50871dc9aee74cb552c">get_cellp3</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160; </div>
-<div class="line"><a name="l00081"></a><span class="lineno">   81</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a131c6e8554be662d4c3f00080fba17d9">get_cellp4</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160; </div>
-<div class="line"><a name="l00085"></a><span class="lineno">   85</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a3755791e313f0394a11206a6a0f57e89">get_cellp5</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160; </div>
-<div class="line"><a name="l00089"></a><span class="lineno">   89</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a051150b259f746bec3c56d9f85300916">get_cellp6</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160; </div>
-<div class="line"><a name="l00093"></a><span class="lineno">   93</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a17fc29ef542ad0bd38fd1ee568a7acc7">get_cellp7</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160; </div>
-<div class="line"><a name="l00097"></a><span class="lineno">   97</span>&#160;    <a class="code" href="class_material.html">Material</a> <a class="code" href="class_cell.html#ad47dee45c383291b62ff0a820b75b356">get_cellMaterial</a>() <span class="keyword">const</span>;</div>
-<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160; </div>
-<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160;    <span class="comment">// virtual function allows the correct version of volume and center of mass to be called for each shape</span></div>
-<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160; </div>
-<div class="line"><a name="l00104"></a><span class="lineno">  104</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="class_cell.html#aeb6ce4192c3297ad1437faecabe17a7c">calculateVolume</a>();</div>
-<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160; </div>
-<div class="line"><a name="l00109"></a><span class="lineno">  109</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#add649863f5879f314d5b59c567d855a1">centerOfMass</a>();</div>
-<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160; </div>
-<div class="line"><a name="l00113"></a><span class="lineno">  113</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_cell.html#a62ec8b244d137c4f0a75b2ffbc8de1b8">weight</a>();</div>
-<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160; </div>
-<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160;<span class="keyword">protected</span>:</div>
-<div class="line"><a name="l00116"></a><span class="lineno"><a class="line" href="class_cell.html#a4e6d7e01a643163d42ceb3c593d493d5">  116</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a4e6d7e01a643163d42ceb3c593d493d5">cellIndex</a>;                           </div>
-<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_cell.html#ae686b96d10eb4ce6cc6cec5150b680cf">  117</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="class_cell.html#ae686b96d10eb4ce6cc6cec5150b680cf">cellLetter</a>;                         </div>
-<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_cell.html#a192aa87e802a6bf72daa03c74e09a61f">  118</a></span>&#160;    <a class="code" href="class_material.html">Material</a> <a class="code" href="class_cell.html#a192aa87e802a6bf72daa03c74e09a61f">theMaterial</a>;                    </div>
-<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_cell.html#a0905f1daf29a939a7c1b6e9fa4d26bd3">  119</a></span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> p0, p1, p2, p3, p4, p5, p6, <a class="code" href="class_cell.html#a0905f1daf29a939a7c1b6e9fa4d26bd3">p7</a>; </div>
-<div class="line"><a name="l00120"></a><span class="lineno">  120</span>&#160;};</div>
-<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160; </div>
-<div class="line"><a name="l00127"></a><span class="lineno"><a class="line" href="class_tetrahedron.html">  127</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tetrahedron.html">Tetrahedron</a> : <span class="keyword">public</span> <a class="code" href="class_cell.html">Cell</a></div>
-<div class="line"><a name="l00128"></a><span class="lineno">  128</span>&#160;{</div>
-<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00133"></a><span class="lineno">  133</span>&#160;    <a class="code" href="class_tetrahedron.html#ae0b07b13c90b10e253b3fb9978f7d2e4">Tetrahedron</a>();</div>
-<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160; </div>
-<div class="line"><a name="l00139"></a><span class="lineno">  139</span>&#160;    <a class="code" href="class_tetrahedron.html#ae0b07b13c90b10e253b3fb9978f7d2e4">Tetrahedron</a>(<span class="keywordtype">int</span> &amp;tCellIndex, <span class="keywordtype">char</span> &amp;tCellLetter, <a class="code" href="class_material.html">Material</a> &amp;tTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;tP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;tP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;tP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;tP3);</div>
-<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160; </div>
-<div class="line"><a name="l00143"></a><span class="lineno">  143</span>&#160;    <a class="code" href="class_tetrahedron.html#ab2efaafd1df30b5415669de435b3f8dc">~Tetrahedron</a>();</div>
-<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160; </div>
-<div class="line"><a name="l00147"></a><span class="lineno">  147</span>&#160;    <a class="code" href="class_tetrahedron.html#ae0b07b13c90b10e253b3fb9978f7d2e4">Tetrahedron</a>(<span class="keyword">const</span> <a class="code" href="class_tetrahedron.html">Tetrahedron</a> &amp;instance);</div>
-<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160; </div>
-<div class="line"><a name="l00152"></a><span class="lineno">  152</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_tetrahedron.html">Tetrahedron</a> &amp;<a class="code" href="class_tetrahedron.html#ab56eef74201131a2feaa60914900c5ae">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_tetrahedron.html">Tetrahedron</a> &amp;instance);</div>
-<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160; </div>
-<div class="line"><a name="l00156"></a><span class="lineno">  156</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tetrahedron.html#afe4474cdd27091d75a916b576840e380">calculateVolume</a>();</div>
-<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160; </div>
-<div class="line"><a name="l00160"></a><span class="lineno">  160</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_tetrahedron.html#adc66f8a9e364a2542d1106ac20c15a71">centerOfMass</a>();</div>
-<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160; </div>
-<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;    <span class="keywordtype">int</span> cellIndex;           </div>
-<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">char</span> cellLetter;         </div>
-<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <a class="code" href="class_material.html">Material</a> theMaterial;    </div>
-<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> p0, p1, p2, p3; </div>
-<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;};</div>
-<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160; </div>
-<div class="line"><a name="l00174"></a><span class="lineno"><a class="line" href="class_pyramid.html">  174</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pyramid.html">Pyramid</a> : <span class="keyword">public</span> <a class="code" href="class_cell.html">Cell</a></div>
-<div class="line"><a name="l00175"></a><span class="lineno">  175</span>&#160;{</div>
-<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00180"></a><span class="lineno">  180</span>&#160;    <a class="code" href="class_pyramid.html#aa78baa6faa1c3fbcca510e8ddf37de49">Pyramid</a>();</div>
-<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160; </div>
-<div class="line"><a name="l00186"></a><span class="lineno">  186</span>&#160;    <a class="code" href="class_pyramid.html#aa78baa6faa1c3fbcca510e8ddf37de49">Pyramid</a>(<span class="keywordtype">int</span> &amp;pCellIndex, <span class="keywordtype">char</span> &amp;pCellLetter, <a class="code" href="class_material.html">Material</a> &amp;pTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;pP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;pP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;pP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;pP3, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;pP4);</div>
-<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160; </div>
-<div class="line"><a name="l00190"></a><span class="lineno">  190</span>&#160;    <a class="code" href="class_pyramid.html#a815ce650e2be7f04a44a0424af0e208a">~Pyramid</a>();</div>
-<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160; </div>
-<div class="line"><a name="l00194"></a><span class="lineno">  194</span>&#160;    <a class="code" href="class_pyramid.html#aa78baa6faa1c3fbcca510e8ddf37de49">Pyramid</a>(<span class="keyword">const</span> <a class="code" href="class_pyramid.html">Pyramid</a> &amp;instance);</div>
-<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160; </div>
-<div class="line"><a name="l00199"></a><span class="lineno">  199</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_pyramid.html">Pyramid</a> &amp;<a class="code" href="class_pyramid.html#afa957ea2838c2b3be7313457aa141b14">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_pyramid.html">Pyramid</a> &amp;instance);</div>
-<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160; </div>
-<div class="line"><a name="l00203"></a><span class="lineno">  203</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_pyramid.html#af8d1f1776f9497c6cb5041927ad99ebc">calculateVolume</a>(); <span class="comment">// volume of a pyramid</span></div>
-<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160; </div>
-<div class="line"><a name="l00207"></a><span class="lineno">  207</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_pyramid.html#a3bbffdfd79707fd9817df0e37f43cb2c">centerOfMass</a>();</div>
-<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160; </div>
-<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;    <span class="keywordtype">int</span> cellIndex;               </div>
-<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">char</span> cellLetter;             </div>
-<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <a class="code" href="class_material.html">Material</a> theMaterial;        </div>
-<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> p0, p1, p2, p3, p4; </div>
-<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;};</div>
-<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160; </div>
-<div class="line"><a name="l00221"></a><span class="lineno"><a class="line" href="class_hexahedron.html">  221</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hexahedron.html">Hexahedron</a> : <span class="keyword">public</span> <a class="code" href="class_cell.html">Cell</a></div>
-<div class="line"><a name="l00222"></a><span class="lineno">  222</span>&#160;{</div>
-<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;<span class="keyword">public</span>:</div>
-<div class="line"><a name="l00227"></a><span class="lineno">  227</span>&#160;    <a class="code" href="class_hexahedron.html#a8c978186ccc630cabb1c6d00bdb45a85">Hexahedron</a>();</div>
-<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160; </div>
-<div class="line"><a name="l00233"></a><span class="lineno">  233</span>&#160;    <a class="code" href="class_hexahedron.html#a8c978186ccc630cabb1c6d00bdb45a85">Hexahedron</a>(<span class="keywordtype">int</span> &amp;hCellIndex, <span class="keywordtype">char</span> &amp;hCellLetter, <a class="code" href="class_material.html">Material</a> &amp;tTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP3, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP4, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP5, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP6, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP7); <span class="comment">// vector constructor called</span></div>
-<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160; </div>
-<div class="line"><a name="l00237"></a><span class="lineno">  237</span>&#160;    <a class="code" href="class_hexahedron.html#a27548c8590229728ce7d7d36b4336ef8">~Hexahedron</a>();</div>
-<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160; </div>
-<div class="line"><a name="l00241"></a><span class="lineno">  241</span>&#160;    <a class="code" href="class_hexahedron.html#a8c978186ccc630cabb1c6d00bdb45a85">Hexahedron</a>(<span class="keyword">const</span> <a class="code" href="class_hexahedron.html">Hexahedron</a> &amp;instance); <span class="comment">// copying constructor applied</span></div>
-<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160; </div>
-<div class="line"><a name="l00246"></a><span class="lineno">  246</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_hexahedron.html">Hexahedron</a> &amp;<a class="code" href="class_hexahedron.html#a718e0df750b0b83ccbf3f45ddee611e6">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_hexahedron.html">Hexahedron</a> &amp;instance);</div>
-<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160; </div>
-<div class="line"><a name="l00250"></a><span class="lineno">  250</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_hexahedron.html#ae5e58f405601e3f551f1b7ca483fe2c0">calculateVolume</a>();</div>
-<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160; </div>
-<div class="line"><a name="l00254"></a><span class="lineno">  254</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_hexahedron.html#a1109ad00cc4eb5e6be8eb28f34bede4d">centerOfMass</a>();</div>
-<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160; </div>
-<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160;<span class="keyword">private</span>:</div>
-<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;    <span class="keywordtype">int</span> cellIndex;                           </div>
-<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">char</span> cellLetter;                         </div>
-<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <a class="code" href="class_material.html">Material</a> theMaterial;                    </div>
-<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> p0, p1, p2, p3, p4, p5, p6, p7; </div>
-<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;};</div>
-<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160; </div>
-<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160;<span class="preprocessor">#endif</span></div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="preprocessor">#include &lt;cmath&gt;</span></div>
+<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
+<div class="line"><a name="l00018"></a><span class="lineno">   18</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="material_8hpp.html">material.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00019"></a><span class="lineno">   19</span>&#160;<span class="preprocessor">#include &quot;<a class="code" href="vector_8hpp.html">vector.hpp</a>&quot;</span></div>
+<div class="line"><a name="l00020"></a><span class="lineno">   20</span>&#160; </div>
+<div class="line"><a name="l00021"></a><span class="lineno"><a class="line" href="class_cell.html">   21</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_cell.html">Cell</a></div>
+<div class="line"><a name="l00022"></a><span class="lineno">   22</span>&#160;{</div>
+<div class="line"><a name="l00023"></a><span class="lineno">   23</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00027"></a><span class="lineno">   27</span>&#160;    <a class="code" href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>();</div>
+<div class="line"><a name="l00028"></a><span class="lineno">   28</span>&#160; </div>
+<div class="line"><a name="l00033"></a><span class="lineno">   33</span>&#160;    <a class="code" href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>(<span class="keywordtype">char</span> &amp;cCellLetter, <span class="keywordtype">int</span> &amp;cCellIndex, <a class="code" href="class_material.html">Material</a> &amp;cTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP3); <span class="comment">// tetrahedron</span></div>
+<div class="line"><a name="l00034"></a><span class="lineno">   34</span>&#160; </div>
+<div class="line"><a name="l00039"></a><span class="lineno">   39</span>&#160;    <a class="code" href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>(<span class="keywordtype">char</span> &amp;cCellLetter, <span class="keywordtype">int</span> &amp;cCellIndex, <a class="code" href="class_material.html">Material</a> &amp;cTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP3, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP4); <span class="comment">// pyramid</span></div>
+<div class="line"><a name="l00040"></a><span class="lineno">   40</span>&#160; </div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;    <a class="code" href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell</a>(<span class="keywordtype">char</span> &amp;cCellLetter, <span class="keywordtype">int</span> &amp;cCellIndex, <a class="code" href="class_material.html">Material</a> &amp;cTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP3,</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;         <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP4, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP5, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP6, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;cP7); <span class="comment">// hexahedron</span></div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160; </div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;    <a class="code" href="class_cell.html#a9fa559f7a28e2b4336c6879ca09304d8">~Cell</a>();</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160; </div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a066b31356cc1acecddbafa95539c8273">get_cellIndex</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
+<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;    <span class="keywordtype">char</span> <a class="code" href="class_cell.html#a6119bb1b7e5042a76ad4a0ee43911b80">get_cellLetter</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00059"></a><span class="lineno">   59</span>&#160; </div>
+<div class="line"><a name="l00062"></a><span class="lineno">   62</span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a3fed3e1e1edf98ef2f95e200184a54e7">get_cellMaterialIndex</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00063"></a><span class="lineno">   63</span>&#160; </div>
+<div class="line"><a name="l00066"></a><span class="lineno">   66</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a9122db7fad301c04a579d761679c646a">get_cellp0</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00067"></a><span class="lineno">   67</span>&#160; </div>
+<div class="line"><a name="l00070"></a><span class="lineno">   70</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a81b0a78f834d7c43403699b174ea3a9b">get_cellp1</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00071"></a><span class="lineno">   71</span>&#160; </div>
+<div class="line"><a name="l00074"></a><span class="lineno">   74</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a741911c84cf52afc65c2f6850372bf79">get_cellp2</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00075"></a><span class="lineno">   75</span>&#160; </div>
+<div class="line"><a name="l00078"></a><span class="lineno">   78</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a6594c89106efe50871dc9aee74cb552c">get_cellp3</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00079"></a><span class="lineno">   79</span>&#160; </div>
+<div class="line"><a name="l00082"></a><span class="lineno">   82</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a131c6e8554be662d4c3f00080fba17d9">get_cellp4</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00083"></a><span class="lineno">   83</span>&#160; </div>
+<div class="line"><a name="l00086"></a><span class="lineno">   86</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a3755791e313f0394a11206a6a0f57e89">get_cellp5</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00087"></a><span class="lineno">   87</span>&#160; </div>
+<div class="line"><a name="l00090"></a><span class="lineno">   90</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a051150b259f746bec3c56d9f85300916">get_cellp6</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00091"></a><span class="lineno">   91</span>&#160; </div>
+<div class="line"><a name="l00094"></a><span class="lineno">   94</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#a17fc29ef542ad0bd38fd1ee568a7acc7">get_cellp7</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00095"></a><span class="lineno">   95</span>&#160; </div>
+<div class="line"><a name="l00098"></a><span class="lineno">   98</span>&#160;    <a class="code" href="class_material.html">Material</a> <a class="code" href="class_cell.html#ad47dee45c383291b62ff0a820b75b356">get_cellMaterial</a>() <span class="keyword">const</span>;</div>
+<div class="line"><a name="l00099"></a><span class="lineno">   99</span>&#160; </div>
+<div class="line"><a name="l00100"></a><span class="lineno">  100</span>&#160;    <span class="comment">// virtual function allows the correct version of volume and center of mass to be called for each shape</span></div>
+<div class="line"><a name="l00101"></a><span class="lineno">  101</span>&#160; </div>
+<div class="line"><a name="l00105"></a><span class="lineno">  105</span>&#160;    <span class="keyword">virtual</span> <span class="keywordtype">float</span> <a class="code" href="class_cell.html#aeb6ce4192c3297ad1437faecabe17a7c">calculateVolume</a>();</div>
+<div class="line"><a name="l00106"></a><span class="lineno">  106</span>&#160; </div>
+<div class="line"><a name="l00110"></a><span class="lineno">  110</span>&#160;    <span class="keyword">virtual</span> <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_cell.html#add649863f5879f314d5b59c567d855a1">centerOfMass</a>();</div>
+<div class="line"><a name="l00111"></a><span class="lineno">  111</span>&#160; </div>
+<div class="line"><a name="l00114"></a><span class="lineno">  114</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_cell.html#a62ec8b244d137c4f0a75b2ffbc8de1b8">weight</a>();</div>
+<div class="line"><a name="l00115"></a><span class="lineno">  115</span>&#160; </div>
+<div class="line"><a name="l00116"></a><span class="lineno">  116</span>&#160;<span class="keyword">protected</span>:</div>
+<div class="line"><a name="l00117"></a><span class="lineno"><a class="line" href="class_cell.html#a4e6d7e01a643163d42ceb3c593d493d5">  117</a></span>&#160;    <span class="keywordtype">int</span> <a class="code" href="class_cell.html#a4e6d7e01a643163d42ceb3c593d493d5">cellIndex</a>;                           </div>
+<div class="line"><a name="l00118"></a><span class="lineno"><a class="line" href="class_cell.html#ae686b96d10eb4ce6cc6cec5150b680cf">  118</a></span>&#160;    <span class="keywordtype">char</span> <a class="code" href="class_cell.html#ae686b96d10eb4ce6cc6cec5150b680cf">cellLetter</a>;                         </div>
+<div class="line"><a name="l00119"></a><span class="lineno"><a class="line" href="class_cell.html#a192aa87e802a6bf72daa03c74e09a61f">  119</a></span>&#160;    <a class="code" href="class_material.html">Material</a> <a class="code" href="class_cell.html#a192aa87e802a6bf72daa03c74e09a61f">theMaterial</a>;                    </div>
+<div class="line"><a name="l00120"></a><span class="lineno"><a class="line" href="class_cell.html#a0905f1daf29a939a7c1b6e9fa4d26bd3">  120</a></span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> p0, p1, p2, p3, p4, p5, p6, <a class="code" href="class_cell.html#a0905f1daf29a939a7c1b6e9fa4d26bd3">p7</a>; </div>
+<div class="line"><a name="l00121"></a><span class="lineno">  121</span>&#160;};</div>
+<div class="line"><a name="l00122"></a><span class="lineno">  122</span>&#160; </div>
+<div class="line"><a name="l00128"></a><span class="lineno"><a class="line" href="class_tetrahedron.html">  128</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_tetrahedron.html">Tetrahedron</a> : <span class="keyword">public</span> <a class="code" href="class_cell.html">Cell</a></div>
+<div class="line"><a name="l00129"></a><span class="lineno">  129</span>&#160;{</div>
+<div class="line"><a name="l00130"></a><span class="lineno">  130</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00134"></a><span class="lineno">  134</span>&#160;    <a class="code" href="class_tetrahedron.html#ae0b07b13c90b10e253b3fb9978f7d2e4">Tetrahedron</a>();</div>
+<div class="line"><a name="l00135"></a><span class="lineno">  135</span>&#160; </div>
+<div class="line"><a name="l00140"></a><span class="lineno">  140</span>&#160;    <a class="code" href="class_tetrahedron.html#ae0b07b13c90b10e253b3fb9978f7d2e4">Tetrahedron</a>(<span class="keywordtype">int</span> &amp;tCellIndex, <span class="keywordtype">char</span> &amp;tCellLetter, <a class="code" href="class_material.html">Material</a> &amp;tTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;tP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;tP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;tP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;tP3);</div>
+<div class="line"><a name="l00141"></a><span class="lineno">  141</span>&#160; </div>
+<div class="line"><a name="l00144"></a><span class="lineno">  144</span>&#160;    <a class="code" href="class_tetrahedron.html#ab2efaafd1df30b5415669de435b3f8dc">~Tetrahedron</a>();</div>
+<div class="line"><a name="l00145"></a><span class="lineno">  145</span>&#160; </div>
+<div class="line"><a name="l00148"></a><span class="lineno">  148</span>&#160;    <a class="code" href="class_tetrahedron.html#ae0b07b13c90b10e253b3fb9978f7d2e4">Tetrahedron</a>(<span class="keyword">const</span> <a class="code" href="class_tetrahedron.html">Tetrahedron</a> &amp;instance);</div>
+<div class="line"><a name="l00149"></a><span class="lineno">  149</span>&#160; </div>
+<div class="line"><a name="l00153"></a><span class="lineno">  153</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_tetrahedron.html">Tetrahedron</a> &amp;<a class="code" href="class_tetrahedron.html#ab56eef74201131a2feaa60914900c5ae">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_tetrahedron.html">Tetrahedron</a> &amp;instance);</div>
+<div class="line"><a name="l00154"></a><span class="lineno">  154</span>&#160; </div>
+<div class="line"><a name="l00157"></a><span class="lineno">  157</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_tetrahedron.html#afe4474cdd27091d75a916b576840e380">calculateVolume</a>();</div>
+<div class="line"><a name="l00158"></a><span class="lineno">  158</span>&#160; </div>
+<div class="line"><a name="l00161"></a><span class="lineno">  161</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_tetrahedron.html#adc66f8a9e364a2542d1106ac20c15a71">centerOfMass</a>();</div>
+<div class="line"><a name="l00162"></a><span class="lineno">  162</span>&#160; </div>
+<div class="line"><a name="l00163"></a><span class="lineno">  163</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00164"></a><span class="lineno">  164</span>&#160;    <span class="keywordtype">int</span> cellIndex;           </div>
+<div class="line"><a name="l00165"></a><span class="lineno">  165</span>&#160;    <span class="keywordtype">char</span> cellLetter;         </div>
+<div class="line"><a name="l00166"></a><span class="lineno">  166</span>&#160;    <a class="code" href="class_material.html">Material</a> theMaterial;    </div>
+<div class="line"><a name="l00167"></a><span class="lineno">  167</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> p0, p1, p2, p3; </div>
+<div class="line"><a name="l00168"></a><span class="lineno">  168</span>&#160;};</div>
+<div class="line"><a name="l00169"></a><span class="lineno">  169</span>&#160; </div>
+<div class="line"><a name="l00175"></a><span class="lineno"><a class="line" href="class_pyramid.html">  175</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_pyramid.html">Pyramid</a> : <span class="keyword">public</span> <a class="code" href="class_cell.html">Cell</a></div>
+<div class="line"><a name="l00176"></a><span class="lineno">  176</span>&#160;{</div>
+<div class="line"><a name="l00177"></a><span class="lineno">  177</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00181"></a><span class="lineno">  181</span>&#160;    <a class="code" href="class_pyramid.html#aa78baa6faa1c3fbcca510e8ddf37de49">Pyramid</a>();</div>
+<div class="line"><a name="l00182"></a><span class="lineno">  182</span>&#160; </div>
+<div class="line"><a name="l00187"></a><span class="lineno">  187</span>&#160;    <a class="code" href="class_pyramid.html#aa78baa6faa1c3fbcca510e8ddf37de49">Pyramid</a>(<span class="keywordtype">int</span> &amp;pCellIndex, <span class="keywordtype">char</span> &amp;pCellLetter, <a class="code" href="class_material.html">Material</a> &amp;pTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;pP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;pP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;pP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;pP3, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;pP4);</div>
+<div class="line"><a name="l00188"></a><span class="lineno">  188</span>&#160; </div>
+<div class="line"><a name="l00191"></a><span class="lineno">  191</span>&#160;    <a class="code" href="class_pyramid.html#a815ce650e2be7f04a44a0424af0e208a">~Pyramid</a>();</div>
+<div class="line"><a name="l00192"></a><span class="lineno">  192</span>&#160; </div>
+<div class="line"><a name="l00195"></a><span class="lineno">  195</span>&#160;    <a class="code" href="class_pyramid.html#aa78baa6faa1c3fbcca510e8ddf37de49">Pyramid</a>(<span class="keyword">const</span> <a class="code" href="class_pyramid.html">Pyramid</a> &amp;instance);</div>
+<div class="line"><a name="l00196"></a><span class="lineno">  196</span>&#160; </div>
+<div class="line"><a name="l00200"></a><span class="lineno">  200</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_pyramid.html">Pyramid</a> &amp;<a class="code" href="class_pyramid.html#afa957ea2838c2b3be7313457aa141b14">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_pyramid.html">Pyramid</a> &amp;instance);</div>
+<div class="line"><a name="l00201"></a><span class="lineno">  201</span>&#160; </div>
+<div class="line"><a name="l00204"></a><span class="lineno">  204</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_pyramid.html#af8d1f1776f9497c6cb5041927ad99ebc">calculateVolume</a>(); <span class="comment">// volume of a pyramid</span></div>
+<div class="line"><a name="l00205"></a><span class="lineno">  205</span>&#160; </div>
+<div class="line"><a name="l00208"></a><span class="lineno">  208</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_pyramid.html#a3bbffdfd79707fd9817df0e37f43cb2c">centerOfMass</a>();</div>
+<div class="line"><a name="l00209"></a><span class="lineno">  209</span>&#160; </div>
+<div class="line"><a name="l00210"></a><span class="lineno">  210</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00211"></a><span class="lineno">  211</span>&#160;    <span class="keywordtype">int</span> cellIndex;               </div>
+<div class="line"><a name="l00212"></a><span class="lineno">  212</span>&#160;    <span class="keywordtype">char</span> cellLetter;             </div>
+<div class="line"><a name="l00213"></a><span class="lineno">  213</span>&#160;    <a class="code" href="class_material.html">Material</a> theMaterial;        </div>
+<div class="line"><a name="l00214"></a><span class="lineno">  214</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> p0, p1, p2, p3, p4; </div>
+<div class="line"><a name="l00215"></a><span class="lineno">  215</span>&#160;};</div>
+<div class="line"><a name="l00216"></a><span class="lineno">  216</span>&#160; </div>
+<div class="line"><a name="l00222"></a><span class="lineno"><a class="line" href="class_hexahedron.html">  222</a></span>&#160;<span class="keyword">class </span><a class="code" href="class_hexahedron.html">Hexahedron</a> : <span class="keyword">public</span> <a class="code" href="class_cell.html">Cell</a></div>
+<div class="line"><a name="l00223"></a><span class="lineno">  223</span>&#160;{</div>
+<div class="line"><a name="l00224"></a><span class="lineno">  224</span>&#160;<span class="keyword">public</span>:</div>
+<div class="line"><a name="l00228"></a><span class="lineno">  228</span>&#160;    <a class="code" href="class_hexahedron.html#a8c978186ccc630cabb1c6d00bdb45a85">Hexahedron</a>();</div>
+<div class="line"><a name="l00229"></a><span class="lineno">  229</span>&#160; </div>
+<div class="line"><a name="l00234"></a><span class="lineno">  234</span>&#160;    <a class="code" href="class_hexahedron.html#a8c978186ccc630cabb1c6d00bdb45a85">Hexahedron</a>(<span class="keywordtype">int</span> &amp;hCellIndex, <span class="keywordtype">char</span> &amp;hCellLetter, <a class="code" href="class_material.html">Material</a> &amp;tTheMaterial, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP0, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP1, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP2, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP3, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP4, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP5, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP6, <a class="code" href="class_vector3d.html">Vector3d</a> &amp;hP7); <span class="comment">// vector constructor called</span></div>
+<div class="line"><a name="l00235"></a><span class="lineno">  235</span>&#160; </div>
+<div class="line"><a name="l00238"></a><span class="lineno">  238</span>&#160;    <a class="code" href="class_hexahedron.html#a27548c8590229728ce7d7d36b4336ef8">~Hexahedron</a>();</div>
+<div class="line"><a name="l00239"></a><span class="lineno">  239</span>&#160; </div>
+<div class="line"><a name="l00242"></a><span class="lineno">  242</span>&#160;    <a class="code" href="class_hexahedron.html#a8c978186ccc630cabb1c6d00bdb45a85">Hexahedron</a>(<span class="keyword">const</span> <a class="code" href="class_hexahedron.html">Hexahedron</a> &amp;instance); <span class="comment">// copying constructor applied</span></div>
+<div class="line"><a name="l00243"></a><span class="lineno">  243</span>&#160; </div>
+<div class="line"><a name="l00247"></a><span class="lineno">  247</span>&#160;    <span class="keyword">const</span> <a class="code" href="class_hexahedron.html">Hexahedron</a> &amp;<a class="code" href="class_hexahedron.html#a718e0df750b0b83ccbf3f45ddee611e6">operator=</a>(<span class="keyword">const</span> <a class="code" href="class_hexahedron.html">Hexahedron</a> &amp;instance);</div>
+<div class="line"><a name="l00248"></a><span class="lineno">  248</span>&#160; </div>
+<div class="line"><a name="l00251"></a><span class="lineno">  251</span>&#160;    <span class="keywordtype">float</span> <a class="code" href="class_hexahedron.html#ae5e58f405601e3f551f1b7ca483fe2c0">calculateVolume</a>();</div>
+<div class="line"><a name="l00252"></a><span class="lineno">  252</span>&#160; </div>
+<div class="line"><a name="l00255"></a><span class="lineno">  255</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> <a class="code" href="class_hexahedron.html#a1109ad00cc4eb5e6be8eb28f34bede4d">centerOfMass</a>();</div>
+<div class="line"><a name="l00256"></a><span class="lineno">  256</span>&#160; </div>
+<div class="line"><a name="l00257"></a><span class="lineno">  257</span>&#160;<span class="keyword">private</span>:</div>
+<div class="line"><a name="l00258"></a><span class="lineno">  258</span>&#160;    <span class="keywordtype">int</span> cellIndex;                           </div>
+<div class="line"><a name="l00259"></a><span class="lineno">  259</span>&#160;    <span class="keywordtype">char</span> cellLetter;                         </div>
+<div class="line"><a name="l00260"></a><span class="lineno">  260</span>&#160;    <a class="code" href="class_material.html">Material</a> theMaterial;                    </div>
+<div class="line"><a name="l00261"></a><span class="lineno">  261</span>&#160;    <a class="code" href="class_vector3d.html">Vector3d</a> p0, p1, p2, p3, p4, p5, p6, p7; </div>
+<div class="line"><a name="l00262"></a><span class="lineno">  262</span>&#160;};</div>
+<div class="line"><a name="l00263"></a><span class="lineno">  263</span>&#160; </div>
+<div class="line"><a name="l00264"></a><span class="lineno">  264</span>&#160;<span class="preprocessor">#endif</span></div>
 </div><!-- fragment --></div><!-- contents -->
 <div class="ttc" id="aclass_tetrahedron_html_ae0b07b13c90b10e253b3fb9978f7d2e4"><div class="ttname"><a href="class_tetrahedron.html#ae0b07b13c90b10e253b3fb9978f7d2e4">Tetrahedron::Tetrahedron</a></div><div class="ttdeci">Tetrahedron()</div><div class="ttdef"><b>Definition:</b> cell.cpp:101</div></div>
 <div class="ttc" id="aclass_cell_html_a17fc29ef542ad0bd38fd1ee568a7acc7"><div class="ttname"><a href="class_cell.html#a17fc29ef542ad0bd38fd1ee568a7acc7">Cell::get_cellp7</a></div><div class="ttdeci">Vector3d get_cellp7() const</div><div class="ttdef"><b>Definition:</b> cell.cpp:74</div></div>
 <div class="ttc" id="avector_8hpp_html"><div class="ttname"><a href="vector_8hpp.html">vector.hpp</a></div></div>
-<div class="ttc" id="aclass_pyramid_html"><div class="ttname"><a href="class_pyramid.html">Pyramid</a></div><div class="ttdef"><b>Definition:</b> cell.hpp:174</div></div>
+<div class="ttc" id="aclass_pyramid_html"><div class="ttname"><a href="class_pyramid.html">Pyramid</a></div><div class="ttdef"><b>Definition:</b> cell.hpp:175</div></div>
 <div class="ttc" id="aclass_cell_html_a3fed3e1e1edf98ef2f95e200184a54e7"><div class="ttname"><a href="class_cell.html#a3fed3e1e1edf98ef2f95e200184a54e7">Cell::get_cellMaterialIndex</a></div><div class="ttdeci">int get_cellMaterialIndex() const</div></div>
 <div class="ttc" id="aclass_tetrahedron_html_afe4474cdd27091d75a916b576840e380"><div class="ttname"><a href="class_tetrahedron.html#afe4474cdd27091d75a916b576840e380">Tetrahedron::calculateVolume</a></div><div class="ttdeci">float calculateVolume()</div><div class="ttdef"><b>Definition:</b> cell.cpp:173</div></div>
 <div class="ttc" id="amaterial_8hpp_html"><div class="ttname"><a href="material_8hpp.html">material.hpp</a></div></div>
 <div class="ttc" id="aclass_cell_html_ad47dee45c383291b62ff0a820b75b356"><div class="ttname"><a href="class_cell.html#ad47dee45c383291b62ff0a820b75b356">Cell::get_cellMaterial</a></div><div class="ttdeci">Material get_cellMaterial() const</div><div class="ttdef"><b>Definition:</b> cell.cpp:66</div></div>
-<div class="ttc" id="aclass_cell_html_a4e6d7e01a643163d42ceb3c593d493d5"><div class="ttname"><a href="class_cell.html#a4e6d7e01a643163d42ceb3c593d493d5">Cell::cellIndex</a></div><div class="ttdeci">int cellIndex</div><div class="ttdef"><b>Definition:</b> cell.hpp:116</div></div>
+<div class="ttc" id="aclass_cell_html_a4e6d7e01a643163d42ceb3c593d493d5"><div class="ttname"><a href="class_cell.html#a4e6d7e01a643163d42ceb3c593d493d5">Cell::cellIndex</a></div><div class="ttdeci">int cellIndex</div><div class="ttdef"><b>Definition:</b> cell.hpp:117</div></div>
 <div class="ttc" id="aclass_hexahedron_html_a1109ad00cc4eb5e6be8eb28f34bede4d"><div class="ttname"><a href="class_hexahedron.html#a1109ad00cc4eb5e6be8eb28f34bede4d">Hexahedron::centerOfMass</a></div><div class="ttdeci">Vector3d centerOfMass()</div><div class="ttdef"><b>Definition:</b> cell.cpp:590</div></div>
 <div class="ttc" id="aclass_cell_html_a131c6e8554be662d4c3f00080fba17d9"><div class="ttname"><a href="class_cell.html#a131c6e8554be662d4c3f00080fba17d9">Cell::get_cellp4</a></div><div class="ttdeci">Vector3d get_cellp4() const</div><div class="ttdef"><b>Definition:</b> cell.cpp:71</div></div>
 <div class="ttc" id="aclass_pyramid_html_a815ce650e2be7f04a44a0424af0e208a"><div class="ttname"><a href="class_pyramid.html#a815ce650e2be7f04a44a0424af0e208a">Pyramid::~Pyramid</a></div><div class="ttdeci">~Pyramid()</div><div class="ttdef"><b>Definition:</b> cell.cpp:228</div></div>
-<div class="ttc" id="aclass_tetrahedron_html"><div class="ttname"><a href="class_tetrahedron.html">Tetrahedron</a></div><div class="ttdef"><b>Definition:</b> cell.hpp:127</div></div>
+<div class="ttc" id="aclass_tetrahedron_html"><div class="ttname"><a href="class_tetrahedron.html">Tetrahedron</a></div><div class="ttdef"><b>Definition:</b> cell.hpp:128</div></div>
 <div class="ttc" id="aclass_tetrahedron_html_ab56eef74201131a2feaa60914900c5ae"><div class="ttname"><a href="class_tetrahedron.html#ab56eef74201131a2feaa60914900c5ae">Tetrahedron::operator=</a></div><div class="ttdeci">const Tetrahedron &amp; operator=(const Tetrahedron &amp;instance)</div><div class="ttdef"><b>Definition:</b> cell.cpp:133</div></div>
 <div class="ttc" id="aclass_cell_html_aeb6ce4192c3297ad1437faecabe17a7c"><div class="ttname"><a href="class_cell.html#aeb6ce4192c3297ad1437faecabe17a7c">Cell::calculateVolume</a></div><div class="ttdeci">virtual float calculateVolume()</div><div class="ttdef"><b>Definition:</b> cell.cpp:77</div></div>
-<div class="ttc" id="aclass_cell_html_a192aa87e802a6bf72daa03c74e09a61f"><div class="ttname"><a href="class_cell.html#a192aa87e802a6bf72daa03c74e09a61f">Cell::theMaterial</a></div><div class="ttdeci">Material theMaterial</div><div class="ttdef"><b>Definition:</b> cell.hpp:118</div></div>
+<div class="ttc" id="aclass_cell_html_a192aa87e802a6bf72daa03c74e09a61f"><div class="ttname"><a href="class_cell.html#a192aa87e802a6bf72daa03c74e09a61f">Cell::theMaterial</a></div><div class="ttdeci">Material theMaterial</div><div class="ttdef"><b>Definition:</b> cell.hpp:119</div></div>
 <div class="ttc" id="aclass_tetrahedron_html_ab2efaafd1df30b5415669de435b3f8dc"><div class="ttname"><a href="class_tetrahedron.html#ab2efaafd1df30b5415669de435b3f8dc">Tetrahedron::~Tetrahedron</a></div><div class="ttdeci">~Tetrahedron()</div><div class="ttdef"><b>Definition:</b> cell.cpp:115</div></div>
 <div class="ttc" id="aclass_cell_html_a9122db7fad301c04a579d761679c646a"><div class="ttname"><a href="class_cell.html#a9122db7fad301c04a579d761679c646a">Cell::get_cellp0</a></div><div class="ttdeci">Vector3d get_cellp0() const</div><div class="ttdef"><b>Definition:</b> cell.cpp:67</div></div>
 <div class="ttc" id="aclass_tetrahedron_html_adc66f8a9e364a2542d1106ac20c15a71"><div class="ttname"><a href="class_tetrahedron.html#adc66f8a9e364a2542d1106ac20c15a71">Tetrahedron::centerOfMass</a></div><div class="ttdeci">Vector3d centerOfMass()</div><div class="ttdef"><b>Definition:</b> cell.cpp:194</div></div>
 <div class="ttc" id="aclass_hexahedron_html_a8c978186ccc630cabb1c6d00bdb45a85"><div class="ttname"><a href="class_hexahedron.html#a8c978186ccc630cabb1c6d00bdb45a85">Hexahedron::Hexahedron</a></div><div class="ttdeci">Hexahedron()</div><div class="ttdef"><b>Definition:</b> cell.cpp:430</div></div>
-<div class="ttc" id="aclass_cell_html"><div class="ttname"><a href="class_cell.html">Cell</a></div><div class="ttdef"><b>Definition:</b> cell.hpp:20</div></div>
+<div class="ttc" id="aclass_cell_html"><div class="ttname"><a href="class_cell.html">Cell</a></div><div class="ttdef"><b>Definition:</b> cell.hpp:21</div></div>
 <div class="ttc" id="aclass_material_html"><div class="ttname"><a href="class_material.html">Material</a></div><div class="ttdef"><b>Definition:</b> material.hpp:17</div></div>
 <div class="ttc" id="aclass_cell_html_a62ec8b244d137c4f0a75b2ffbc8de1b8"><div class="ttname"><a href="class_cell.html#a62ec8b244d137c4f0a75b2ffbc8de1b8">Cell::weight</a></div><div class="ttdeci">float weight()</div><div class="ttdef"><b>Definition:</b> cell.cpp:89</div></div>
 <div class="ttc" id="aclass_pyramid_html_a3bbffdfd79707fd9817df0e37f43cb2c"><div class="ttname"><a href="class_pyramid.html#a3bbffdfd79707fd9817df0e37f43cb2c">Pyramid::centerOfMass</a></div><div class="ttdeci">Vector3d centerOfMass()</div><div class="ttdef"><b>Definition:</b> cell.cpp:360</div></div>
@@ -237,15 +238,15 @@ $(function() {
 <div class="ttc" id="aclass_vector3d_html"><div class="ttname"><a href="class_vector3d.html">Vector3d</a></div><div class="ttdef"><b>Definition:</b> vector.hpp:16</div></div>
 <div class="ttc" id="aclass_cell_html_a066b31356cc1acecddbafa95539c8273"><div class="ttname"><a href="class_cell.html#a066b31356cc1acecddbafa95539c8273">Cell::get_cellIndex</a></div><div class="ttdeci">int get_cellIndex() const</div><div class="ttdef"><b>Definition:</b> cell.cpp:64</div></div>
 <div class="ttc" id="aclass_hexahedron_html_a27548c8590229728ce7d7d36b4336ef8"><div class="ttname"><a href="class_hexahedron.html#a27548c8590229728ce7d7d36b4336ef8">Hexahedron::~Hexahedron</a></div><div class="ttdeci">~Hexahedron()</div><div class="ttdef"><b>Definition:</b> cell.cpp:454</div></div>
-<div class="ttc" id="aclass_hexahedron_html"><div class="ttname"><a href="class_hexahedron.html">Hexahedron</a></div><div class="ttdef"><b>Definition:</b> cell.hpp:221</div></div>
+<div class="ttc" id="aclass_hexahedron_html"><div class="ttname"><a href="class_hexahedron.html">Hexahedron</a></div><div class="ttdef"><b>Definition:</b> cell.hpp:222</div></div>
 <div class="ttc" id="aclass_cell_html_a3755791e313f0394a11206a6a0f57e89"><div class="ttname"><a href="class_cell.html#a3755791e313f0394a11206a6a0f57e89">Cell::get_cellp5</a></div><div class="ttdeci">Vector3d get_cellp5() const</div><div class="ttdef"><b>Definition:</b> cell.cpp:72</div></div>
 <div class="ttc" id="aclass_hexahedron_html_a718e0df750b0b83ccbf3f45ddee611e6"><div class="ttname"><a href="class_hexahedron.html#a718e0df750b0b83ccbf3f45ddee611e6">Hexahedron::operator=</a></div><div class="ttdeci">const Hexahedron &amp; operator=(const Hexahedron &amp;instance)</div><div class="ttdef"><b>Definition:</b> cell.cpp:476</div></div>
 <div class="ttc" id="aclass_cell_html_a394510643e8664cf12b5efaf5cb99f71"><div class="ttname"><a href="class_cell.html#a394510643e8664cf12b5efaf5cb99f71">Cell::Cell</a></div><div class="ttdeci">Cell()</div><div class="ttdef"><b>Definition:</b> cell.cpp:14</div></div>
 <div class="ttc" id="aclass_cell_html_a741911c84cf52afc65c2f6850372bf79"><div class="ttname"><a href="class_cell.html#a741911c84cf52afc65c2f6850372bf79">Cell::get_cellp2</a></div><div class="ttdeci">Vector3d get_cellp2() const</div><div class="ttdef"><b>Definition:</b> cell.cpp:69</div></div>
 <div class="ttc" id="aclass_cell_html_a9fa559f7a28e2b4336c6879ca09304d8"><div class="ttname"><a href="class_cell.html#a9fa559f7a28e2b4336c6879ca09304d8">Cell::~Cell</a></div><div class="ttdeci">~Cell()</div><div class="ttdef"><b>Definition:</b> cell.cpp:98</div></div>
-<div class="ttc" id="aclass_cell_html_ae686b96d10eb4ce6cc6cec5150b680cf"><div class="ttname"><a href="class_cell.html#ae686b96d10eb4ce6cc6cec5150b680cf">Cell::cellLetter</a></div><div class="ttdeci">char cellLetter</div><div class="ttdef"><b>Definition:</b> cell.hpp:117</div></div>
+<div class="ttc" id="aclass_cell_html_ae686b96d10eb4ce6cc6cec5150b680cf"><div class="ttname"><a href="class_cell.html#ae686b96d10eb4ce6cc6cec5150b680cf">Cell::cellLetter</a></div><div class="ttdeci">char cellLetter</div><div class="ttdef"><b>Definition:</b> cell.hpp:118</div></div>
 <div class="ttc" id="aclass_cell_html_a81b0a78f834d7c43403699b174ea3a9b"><div class="ttname"><a href="class_cell.html#a81b0a78f834d7c43403699b174ea3a9b">Cell::get_cellp1</a></div><div class="ttdeci">Vector3d get_cellp1() const</div><div class="ttdef"><b>Definition:</b> cell.cpp:68</div></div>
-<div class="ttc" id="aclass_cell_html_a0905f1daf29a939a7c1b6e9fa4d26bd3"><div class="ttname"><a href="class_cell.html#a0905f1daf29a939a7c1b6e9fa4d26bd3">Cell::p7</a></div><div class="ttdeci">Vector3d p7</div><div class="ttdef"><b>Definition:</b> cell.hpp:119</div></div>
+<div class="ttc" id="aclass_cell_html_a0905f1daf29a939a7c1b6e9fa4d26bd3"><div class="ttname"><a href="class_cell.html#a0905f1daf29a939a7c1b6e9fa4d26bd3">Cell::p7</a></div><div class="ttdeci">Vector3d p7</div><div class="ttdef"><b>Definition:</b> cell.hpp:120</div></div>
 <div class="ttc" id="aclass_cell_html_a6119bb1b7e5042a76ad4a0ee43911b80"><div class="ttname"><a href="class_cell.html#a6119bb1b7e5042a76ad4a0ee43911b80">Cell::get_cellLetter</a></div><div class="ttdeci">char get_cellLetter() const</div><div class="ttdef"><b>Definition:</b> cell.cpp:65</div></div>
 <div class="ttc" id="aclass_pyramid_html_af8d1f1776f9497c6cb5041927ad99ebc"><div class="ttname"><a href="class_pyramid.html#af8d1f1776f9497c6cb5041927ad99ebc">Pyramid::calculateVolume</a></div><div class="ttdeci">float calculateVolume()</div><div class="ttdef"><b>Definition:</b> cell.cpp:297</div></div>
 <div class="ttc" id="aclass_cell_html_a6594c89106efe50871dc9aee74cb552c"><div class="ttname"><a href="class_cell.html#a6594c89106efe50871dc9aee74cb552c">Cell::get_cellp3</a></div><div class="ttdeci">Vector3d get_cellp3() const</div><div class="ttdef"><b>Definition:</b> cell.cpp:70</div></div>
