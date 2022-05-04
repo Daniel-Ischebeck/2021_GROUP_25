@@ -78,12 +78,16 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:ae3b375de5f6df4faf74a95d64748e048"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ae3b375de5f6df4faf74a95d64748e048">Model</a> ()</td></tr>
 <tr class="separator:ae3b375de5f6df4faf74a95d64748e048"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adec55a48f2b470adb5e9b5eb989e1907"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#adec55a48f2b470adb5e9b5eb989e1907">Model</a> (std::string &amp;filePath)</td></tr>
+<tr class="memdesc:adec55a48f2b470adb5e9b5eb989e1907"><td class="mdescLeft">&#160;</td><td class="mdescRight">The model class constructor.  <a href="class_model.html#adec55a48f2b470adb5e9b5eb989e1907">More...</a><br /></td></tr>
 <tr class="separator:adec55a48f2b470adb5e9b5eb989e1907"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ad6ebd2062a0b823db841a0b88baac4c0"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ad6ebd2062a0b823db841a0b88baac4c0">~Model</a> ()</td></tr>
+<tr class="memdesc:ad6ebd2062a0b823db841a0b88baac4c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">The model class destructor.  <a href="class_model.html#ad6ebd2062a0b823db841a0b88baac4c0">More...</a><br /></td></tr>
 <tr class="separator:ad6ebd2062a0b823db841a0b88baac4c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac88487667e250df3b5b9189151b36b35"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#ac88487667e250df3b5b9189151b36b35">readFile</a> (std::string &amp;filePath)</td></tr>
+<tr class="memdesc:ac88487667e250df3b5b9189151b36b35"><td class="mdescLeft">&#160;</td><td class="mdescRight">blah  <a href="class_model.html#ac88487667e250df3b5b9189151b36b35">More...</a><br /></td></tr>
 <tr class="separator:ac88487667e250df3b5b9189151b36b35"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:abd6293c9a3e29188de8b4118ca960d04"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_model.html#abd6293c9a3e29188de8b4118ca960d04">saveToFile</a> (std::string &amp;newFilePath)</td></tr>
+<tr class="memdesc:abd6293c9a3e29188de8b4118ca960d04"><td class="mdescLeft">&#160;</td><td class="mdescRight">saves the data, which may have been modified to a new file  <a href="class_model.html#abd6293c9a3e29188de8b4118ca960d04">More...</a><br /></td></tr>
 <tr class="separator:abd6293c9a3e29188de8b4118ca960d04"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac07b661515034ca4b68fe96cdf414060"><td class="memItemLeft" align="right" valign="top"><a id="ac07b661515034ca4b68fe96cdf414060"></a>
 int&#160;</td><td class="memItemRight" valign="bottom"><b>declareMaterials</b> (std::string &amp;filePath)</td></tr>
@@ -144,7 +148,15 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>declareCells</b> (std:
         </tr>
       </table>
 </div><div class="memdoc">
-<p>Constructor that reads files as strings and declares the objects accordingly setting up a <a class="el" href="class_model.html">Model</a> Class </p>
+
+<p>The model class constructor. </p>
+<p>Constructor that reads files as strings and declares the objects accordingly setting up a <a class="el" href="class_model.html">Model</a> Class</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>the path to the .mod file being opened </td></tr>
+  </table>
+  </dd>
+</dl>
 
 </div>
 </div>
@@ -162,7 +174,8 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>declareCells</b> (std:
         </tr>
       </table>
 </div><div class="memdoc">
-<p>//Model Destructor </p>
+
+<p>The model class destructor. </p>
 
 </div>
 </div>
@@ -290,7 +303,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>declareCells</b> (std:
         </tr>
       </table>
 </div><div class="memdoc">
-<p>reads file from the string of the file path or name </p>
+
+<p>blah </p>
+<p>reads through the file and determines the number of materials, vectors, cells and assigns relevant size std::vectors to store them in</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">filePath</td><td>the path to the .mod file being opened </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether the file was read successfuly </dd></dl>
 
 </div>
 </div>
@@ -309,7 +331,16 @@ int&#160;</td><td class="memItemRight" valign="bottom"><b>declareCells</b> (std:
         </tr>
       </table>
 </div><div class="memdoc">
-<p>saves file to a certin name assigned by the string argument </p>
+
+<p>saves the data, which may have been modified to a new file </p>
+<p>saves the data, which may have been modified to a new file</p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">newFilePath</td><td>the new file path </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>whether the data was saved to the file successfully </dd></dl>
 
 </div>
 </div>

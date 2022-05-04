@@ -1,6 +1,22 @@
 var searchData=
 [
-  ['tabcontent_235',['tabcontent',['../classtabcontent.html#a0256b7411a66660fdaf8bd47d432bdb8',1,'tabcontent']]],
-  ['tetrahedron_236',['Tetrahedron',['../class_tetrahedron.html#ae0b07b13c90b10e253b3fb9978f7d2e4',1,'Tetrahedron::Tetrahedron()'],['../class_tetrahedron.html#a73faa7541106736b795d13f1118416ce',1,'Tetrahedron::Tetrahedron(int &amp;tCellIndex, char &amp;tCellLetter, Material &amp;tTheMaterial, Vector3d &amp;tP0, Vector3d &amp;tP1, Vector3d &amp;tP2, Vector3d &amp;tP3)'],['../class_tetrahedron.html#af026ee5bbfe70083ecce59b71608a56c',1,'Tetrahedron::Tetrahedron(const Tetrahedron &amp;instance)']]],
-  ['transpose_237',['transpose',['../class_matrix3x3.html#a5d8e51318be351b81165d4bb3ac2fd05',1,'Matrix3x3']]]
+  ['savetofile_223',['saveToFile',['../class_model.html#abd6293c9a3e29188de8b4118ca960d04',1,'Model']]],
+  ['set_5fi00_224',['set_i00',['../class_matrix3x3.html#a3860010651a1cb241c3c4c80d198f6d2',1,'Matrix3x3']]],
+  ['set_5fi01_225',['set_i01',['../class_matrix3x3.html#a601a805d168bc2ba443e60291d04633e',1,'Matrix3x3']]],
+  ['set_5fi02_226',['set_i02',['../class_matrix3x3.html#a0e871ff88073260c06cee1f56b8c7f28',1,'Matrix3x3']]],
+  ['set_5fi10_227',['set_i10',['../class_matrix3x3.html#ad30c09b0bf5b40e924faa26995913d1e',1,'Matrix3x3']]],
+  ['set_5fi11_228',['set_i11',['../class_matrix3x3.html#a42918c6c5a68802c52bf0c2908fda416',1,'Matrix3x3']]],
+  ['set_5fi12_229',['set_i12',['../class_matrix3x3.html#a28e167b678e92bd7160e9606055e5121',1,'Matrix3x3']]],
+  ['set_5fi20_230',['set_i20',['../class_matrix3x3.html#a7e0d4fc4001e52b7983af21681aa31a4',1,'Matrix3x3']]],
+  ['set_5fi21_231',['set_i21',['../class_matrix3x3.html#a40fbfbfb719d4179f3e74183f7d3c212',1,'Matrix3x3']]],
+  ['set_5fi22_232',['set_i22',['../class_matrix3x3.html#a5041aeb9e99ea32a5fe25ec6475a346a',1,'Matrix3x3']]],
+  ['set_5fmaterialcolour_233',['set_materialColour',['../class_material.html#a32cb7ae0fa034461e2d0083816f97770',1,'Material']]],
+  ['set_5fmaterialdensity_234',['set_materialDensity',['../class_material.html#a8442604c0609a5dcde8d53a1403d1364',1,'Material']]],
+  ['set_5fmaterialindex_235',['set_materialIndex',['../class_material.html#a892b6cbe8fd686014820c6b93a8533df',1,'Material']]],
+  ['set_5fmaterialname_236',['set_materialName',['../class_material.html#a793a091d95c8eef0508affbc3e3a5a38',1,'Material']]],
+  ['set_5fvectorid_237',['set_vectorID',['../class_vector3d.html#af1ea60de918922848dd6e6205b4e477f',1,'Vector3d']]],
+  ['set_5fx_238',['set_x',['../class_vector3d.html#aefa3810887656b6fac04843cc7411c2f',1,'Vector3d']]],
+  ['set_5fy_239',['set_y',['../class_vector3d.html#a72fd0ef1fb5d0295645e39e5ee5d5716',1,'Vector3d']]],
+  ['set_5fz_240',['set_z',['../class_vector3d.html#a43506efd8606782fcc97388a61dd3cb0',1,'Vector3d']]],
+  ['statusupdatemessage_241',['statusUpdateMessage',['../class_main_window.html#a86443ea744fda3e9bad328c2fd1c3d6b',1,'MainWindow']]]
 ];
